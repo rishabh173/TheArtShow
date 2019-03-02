@@ -539,7 +539,7 @@ footer span{
 
 .quote h1 span{
 	animation: lighting 0.2s linear;
-	animation-iteration-count: 20;
+	animation-iteration-count: 10;
 	animation-fill-mode: forwards;
 }
 @keyframes lighting{
