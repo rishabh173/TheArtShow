@@ -5,7 +5,12 @@
     })
 $(function(){
 	
-  
+  	 $('#msg').hide();
+
+    $('#signup').click(function(){
+        $('#msg').show();
+
+    })
 
 
 
