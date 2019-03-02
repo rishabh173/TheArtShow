@@ -324,6 +324,7 @@ footer span{
 	width:100%;
 /*	background: #000;
 */	transition: 1s;
+	z-index:9999;
 }
 .preloader:before{
 	content: '';
