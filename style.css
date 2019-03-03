@@ -443,7 +443,7 @@ footer span{
   height: 410px;
   width: 260px;
   transform-style: preserve-3d;
-  perspective: 400px;
+  perspective: 600px;
   transition: 0.5s;
   margin: 40px auto;
   border: solid 6px grey;
