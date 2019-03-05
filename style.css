@@ -495,9 +495,7 @@ nav.bg-light{
 	nav.bg-light{
 		display: flex;
 	}
-	.nav2{
-		display: none;
-	}
+	
 }
 .navitemslist{
 	text-align: center;
