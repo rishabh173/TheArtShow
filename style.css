@@ -25,6 +25,18 @@ h3{
 	
 
 }
+.company{
+	text-align: center;
+}
+#company{
+	font-size: 40px;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	font-family: coves;
+	color: black;
+}
+
 .quote{
 	/*display: table-cell;*/
 	color: black;
@@ -40,23 +52,14 @@ h3{
 	/*padding: 30px;*/
 	//box-sizing: border-box;
 }
- .tagline{
- 	display: block;
- 	/*margin-left: 30px;*/
- 	color: white;
- 	font-weight: lighter;
- 	margin-top: -10px;
- 	font-size: 13px;
- }
+ 
 .quote h1{
 
 	font-size: 80px;
 	letter-spacing: -3px;
 }
-.quote h3{
-	font-size: 40px;
-}
- .btn{
+
+ #explore{
 	width: 320px;
 	background: #f6f6f6;
 	border-bottom: solid 3px white;
@@ -64,6 +67,7 @@ h3{
 	color: black;
 	font-weight: bold;
 	border: none;
+	z-index: 0;
 
 }
 #team{
@@ -82,6 +86,7 @@ h3{
 #email{
 	height: 50px;
 	width: 200px;
+	color: black;
 }
 #signup{
 	height: 50px;
@@ -96,34 +101,11 @@ h3{
 	color: black;
 	font-weight: bold;
 }
-nav.bg-light{
-	background-color: rgba(0,0,0,0.1)!important;
-}
-.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
-	color: white;
-	//font-size: 18px;
-	font-family: Century Gothic;
-	
-}
-.navbar-light .navbar-brand{
 
-}
-.navbar-light .navbar-brand:visited, .navbar-light .navbar-nav .nav-link:visited{
-	color: white;
-}
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
-	color: yellow;
-}
-.navbar-light .navbar-brand:active, .navbar-light .navbar-nav .nav-link:active{
-	color: white!;
-}
-.navbar-light .navbar-toggler-icon{
-	background: url(TOGGLE.png);
-}
 
 section{
 	padding: 70px;
-	display: table;
+	
 	width: 100%;
 
 }
@@ -205,95 +187,37 @@ h5{
 	color: #777;
 	font-size: 13px;
 }
-.navbar-default{
-	background-color: rgba(255,255,255,0.2);
-	border: none;
-}
+
 a:link{
 	text-decoration: none;
 }
-/*.tableCell{
-	padding-top: 50px;
-	display: table-cell;
-	vertical-align: middle;
+
+nav.bg-light{
+	background-color: rgba(0,0,0,0.6)!important;
+	padding: 0px;
 }
-#about h1{
-	text-align: center;
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+	color: white;
+	//font-size: 18px;
+	font-family: Century Gothic;
+	
+}
+.navbar-light .navbar-brand{
+
+}
+.navbar-light .navbar-brand:visited, .navbar-light .navbar-nav .nav-link:visited{
 	color: white;
 }
-#about p{
-	text-align: left;
-	vertical-align: middle;
-	padding: 30px;
-	color: white;
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
+	color: yellow;
 }
-#product{
-	background: url('product.jpg') center;
-	min-height: 100%;
-	background-size: cover;
-	background-attachment: fixed;
-
-	text-align: center;
-	color: white;
-
+.navbar-light .navbar-brand:active, .navbar-light .navbar-nav .nav-link:active{
+	color: white!;
+}
+.navbar-light .navbar-toggler-icon{
+	background: url(TOGGLE.png);
 }
 
-#product p{
-	padding: 20px;
-	color: white;
-	d
-}
-#media{
-	//display: table;
-	//width: 100%;
-	background: url('what.jpeg') bottom no-repeat;
-	background-size: cover;
-
-}
-
-.media-media{
-	//display: table-cell;
-	text-align: center;
-	width: 105%;
-	margin:0 auto;
-}
-
-#contact{
-	background: url('img1.jpeg') center no-repeat;
-	background-size: cover;
-	text-align: center;
-	color: white;
-	background-attachment: fixed;
-}
-
-input,textarea,button{
-	margin: 10px;
-}
-footer{
-	text-align: center;
-	padding: 20px;
-	color: white;
-	background: #000;
-}
-footer span{
-	color: #f6f6f6;
-}
-.col-md-6{
-	text-align: center;
-}
-.fstyle{
-	display: block;
-	color: orange;
-}
-.collapse, .navbar-collapse{
-	position: relative;
-}
-.collapse .navbaroptions, .navbar-collapse .navbaroptions{
-	//padding-top:40px; 
-	position: absolute;
-	right: 0;
-}
-*/
 @media only screen and (max-width: 560px){
 	/*.cover{
 		background-size: 100% 100%;
@@ -324,7 +248,7 @@ footer span{
 	width:100%;
 /*	background: #000;
 */	transition: 1s;
-	z-index:9999;
+	z-index: 9999;
 }
 .preloader:before{
 	content: '';
@@ -438,66 +362,78 @@ footer span{
 #team .container{
 	border-bottom: none;
 }
-.card{
+.thecard{
   position: relative;
-  height: 410px;
-  width: 260px;
+  width: 250px;
+  height: 360px;
+  /*top: 0;
+  left: 0;*/
+  /*width: 100%;
+  height: 100%;*/
+  border-radius: 10px;
   transform-style: preserve-3d;
+  transition:  1s ;
+  -webkit-transform: rotateX(0deg);
   perspective: 600px;
-  transition: 0.5s;
-  margin: 40px auto;
-  border: solid 6px grey;
-/*  box-sizing: border-box;
-*/  border-radius: 5px;
+  margin: 20px auto;
 
 
   
-
 }
-.card .front{
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  border-radius: 10px;
   backface-visibility: hidden;
-  transform: rotateX(0deg);
-  transition: 0.5s;
-  
-
-
+  overflow: hidden;
+  /*background: #ffc728;
+  color: #000;*/
+  transition:  1s
 }
-.card:hover .front{
+.thecard:hover .thefront{
   transform: rotateX(-180deg);
 }
-.card .back{
+
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
   position: absolute;
-  
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  border-radius: 10px;
   backface-visibility: hidden;
+  overflow: hidden;
+  background: black;
+  color: #333;
+  text-align: center;
   transform: rotateX(180deg);
-  transition: 0.5s;
-    
-
-
+  transition:  1s
 }
-.card .back:before{
+.thecard .theback:before{
   content: '';
   position: absolute;
 /*  top: 20px;
 */  left: 50%;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: rgba(255,255,255,0.1);
+
 }
-.card:hover .back{
-  transform: rotateX(0deg);
+.thecard:hover .theback{
+  -webkit-transform: rotateX(0deg);
 }
-.card .back .details{
+
+
+.thecard .theback .details{
   position: absolute;
   top:50%;
   transform: translateY(-50%);
@@ -511,13 +447,9 @@ footer span{
   margin: 0;
 
 }
-.card .back .details h2{
-  color: #fff;
-}
-.card .back .details h2 span{
+.thecard .theback .details h2 span{
   font-size: 12px;
   margin-top: 0px;
-  color: white;
 }
 
 .socialIcons a {
@@ -535,11 +467,11 @@ footer span{
 }
 .socialIcons a:hover{
   background: #e91e63;
-}
+}	
 
 .quote h1 span{
 	animation: lighting 0.2s linear;
-	animation-iteration-count: 10;
+	animation-iteration-count: 20;
 	animation-fill-mode: forwards;
 }
 @keyframes lighting{
@@ -580,15 +512,7 @@ footer span{
 	padding-left: 20px;
 	padding-right: 20px;
 }
-/*#contact{
-	color: #f6f6f6;
-	opacity: 0.8;
-	position: absolute;
-	font-size: 20px;
-	right: 10%;
-	top: 10%;
 
-}*/
 @font-face{
 	font-family: coves;
 	src: url(Coves-Bold.otf) format("opentype");
@@ -597,34 +521,4 @@ footer span{
 	font-family: coves2;
 	src: url(Coves Light.otf) format("opentype");
 }
-/*#home2{
-	/*position: absolute;*/
-	/*left: 35%;*/
-	/*top: 10%;
-}*/
-/*#about2{*/
-	/*position: absolute;*/
-	/*left: 45%;*/
-	/*top: 10%;
-}
-#gallery{*/
-	/*position: absolute;*/
-	/*left: 55%;*/
-/*	top: 10%;
-*/
-/*#contact2{
-*/	/*position: absolute;*/
-	/*left: 65%;*/
-	/*top: 10%;
-}*/
-.company{
-	text-align: center;
-}
-#company{
-	font-size: 40px;
-	color: white;
-	margin: 0 auto;
-	text-align: center;
-	font-family: coves;
-	color: black;
-}
+
