@@ -230,12 +230,12 @@ nav.bg-light{
 	}
 	
 }
-@media only screen and (max-width: 777px){
+@media only screen and (max-width: 1005px){
 	.nav2{
 		display: none;
 	}
 }
-@media only screen and (min-width: 777px){
+@media only screen and (min-width: 1005px){
 	nav{
 		display: none;
 	}
@@ -491,12 +491,12 @@ nav.bg-light{
 
 
 }
-@media only screen and (max-width: 568px){
+/* @media only screen and (max-width: 568px){
 	nav.bg-light{
 		display: flex;
 	}
 	
-}
+} */
 .navitemslist{
 	text-align: center;
 }
